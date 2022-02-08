@@ -13,7 +13,7 @@ const ElectronicItem = (props) => {
         event.preventDefault();
         const amount = useInputRef.current.value;
         // itemsArray.push({id: props.id, quantiy: +amount});
-        cartCtx.addItem({id: props.id, quantity: +amount});
+        cartCtx.addItem({id: props.id, quantity: +amount, name: props.name, key: props.id, price: props.price, weight: props.weight});
         // console.log(itemsArray);
         useInputRef.current.value = 1;
       

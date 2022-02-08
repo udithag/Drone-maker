@@ -1,0 +1,63 @@
+
+.list-item {
+
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 1rem;
+    padding: 1rem;
+    border-bottom: 2px solid rgba(4, 88, 121, 0.89); 
+
+}
+
+.details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 15rem;
+    align-items: center;
+}
+
+.name {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.price {
+
+    padding: 0.25rem;
+    margin-left: 0;
+    color: rgba(4, 88, 121, 0.89);
+    font-weight: 700;
+}
+
+.quantity {
+
+    border: 1px solid;
+    padding: 0.25rem 0.75rem;
+    border-radius: 6px;
+}
+
+.buttons {
+
+    display: flex;
+    align-items: center;
+}
+
+.buttons button {
+
+    border: 1px solid rgba(4, 88, 121, 0.89);
+    border-radius: 6px;
+    width: 3rem;
+    margin: 0.25rem;
+    height: 2rem;
+    color: rgba(4, 88, 121, 0.89);
+    font-weight: bold;
+}
+
+.buttons button:hover {
+
+    background-color: rgba(4, 88, 121, 0.89);
+    color: white;
+} 
