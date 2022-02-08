@@ -8,7 +8,7 @@ const Cart = (props) => {
 
   const cartCtx = useContext(CartContext);
   console.log("ran");
-  console.log(cartCtx.components);
+  //console.log(cartCtx.components);
   console.log(cartCtx.totalAmount);
 return (
     <Modal onClose = {props.onClose}>
