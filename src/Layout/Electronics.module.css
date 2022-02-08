@@ -1,0 +1,52 @@
+.mytabs {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 30vh auto;
+  padding: 25px;
+}
+
+.mytabs .buttonArea {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.mytabs button {
+
+  padding: 25px;
+  background: #1e78bf;
+  font-weight: bold;
+  flex: auto;
+  border: none;
+  border-top-left-radius:14px;
+  border-top-right-radius:14px;
+}
+
+.mytabs .buttonArea button:hover {
+  background-color: #043962;
+}
+
+/* Create an active/current tablink class */
+.mytabs .buttonArea button.active {
+  background-color: white
+}
+
+
+
+
+.mytabs .tab {
+
+  width: 100%; 
+  padding: 20px;
+  background: white;
+  order:1;
+  /* display: none */
+  border-bottom-left-radius:14px;
+  border-bottom-right-radius:14px;
+}
+
+.mytabs .tab h3 {
+    
+  font-size: 3em;
+}
