@@ -117,7 +117,7 @@ const Electronics = () => {
          </div>
          <div id="tab" className={classes.tab}>
            <h3>{string}</h3>
-           <p>Select the {string}</p>
+           <p>Select  {string}....</p>
            <ElectronicItems activeId={activeButtonId} droneItems={DRONE_COMPONENTS} />
          </div>
        </div>

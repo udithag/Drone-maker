@@ -6,3 +6,48 @@
     margin-left: 0;
     padding-left: 0;
 }
+
+.total-price {
+
+    display: flex;
+    flex: wrap;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.buttons {
+
+    display: flex;
+    flex: wrap;
+    justify-content: right;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.buttons button {
+
+    padding: 0.5rem 2rem;
+    border: 1px solid #1e78bf;
+    border-radius: 25px;
+    margin-left: 1rem;
+    box-sizing: border-box;
+}
+
+.order {
+
+    background-color:#1e78bf ;
+    color: white;
+}
+
+.order:hover{
+    background-color:#043962;
+}
+
+.close:hover {
+    background-color:#043962;
+    color: white;
+}
+

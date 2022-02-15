@@ -2,6 +2,15 @@ import classes from "./CartItem.module.css";
 
 const CartItem = (props) => {
 
+  const onAddToCart = ()=> {
+       props.addItemToCart({id: props.id, quantity: 1, name: props.name, key: props.id, price: props.price, weight: props.weight});
+  }
+
+  const onRemoveFromCart = () => {
+
+       props.removeItemFromCart({id: props.id, quantity: 1, name: props.name, key: props.id, price: props.price, weight: props.weight})
+  }
+
     return (
       <li className={classes["list-item"]}>
         <div>
@@ -12,8 +21,8 @@ const CartItem = (props) => {
           </div>
         </div>
         <div className={classes.buttons}>
-            <span> <button>-</button> </span>
-            <span> <button>+</button> </span>
+            <span> <button onClick={onRemoveFromCart}>-</button> </span>
+            <span> <button onClick={onAddToCart}>+</button> </span>
         </div>
       </li>
     );

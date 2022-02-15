@@ -7,6 +7,7 @@ import CartContext from "../../Store/cart-context";
 const ElectronicItem = (props) => {
     const cartCtx = useContext(CartContext);
     const useInputRef = useRef();
+
     
 
     const submitHandler = (event)=> {
@@ -28,9 +29,10 @@ return <li className={classes.item}>
           </div>
           <form className={classes.input} onSubmit={submitHandler}>
               <label htmlFor="amount">Amount</label>
-              <input id="amount" type="number" min="1" step="1" defaultValue="1" ref={useInputRef}></input>
+              <input id="amount" type="number" min="1" step="1" defaultValue="1" ref={useInputRef}></input>            
               <div>
               <button>+Add</button>
+              
               </div>
           </form>
        </li>

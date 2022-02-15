@@ -21,6 +21,7 @@
   border: none;
   border-top-left-radius:14px;
   border-top-right-radius:14px;
+  color: white;
 }
 
 .mytabs .buttonArea button:hover {
@@ -29,7 +30,8 @@
 
 /* Create an active/current tablink class */
 .mytabs .buttonArea button.active {
-  background-color: white
+  background-color: white;
+  color: black;
 }
 
 
@@ -49,4 +51,13 @@
 .mytabs .tab h3 {
     
   font-size: 3em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.mytabs .tab p {
+
+  font-size: 1.25em;
+  font-weight: bold;
 }
